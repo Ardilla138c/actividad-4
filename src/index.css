@@ -4,19 +4,27 @@
 
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark; /* color-scheme: light dark; */
+  color-scheme: light dark;
 
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(201, 181, 196, 0.87); /* Your main text color (pinkish) */
   background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* --- BLACK OUTLINE (CONTORNO NEGRO) --- */
+  /* This creates a 1px black outline around the text */
+  text-shadow: 
+    -1px -1px 0 #000,  /* top-left */
+     1px -1px 0 #000,  /* top-right */
+    -1px  1px 0 #000,  /* bottom-left */
+     1px  1px 0 #000;  /* bottom-right */
 }
 
 a {
