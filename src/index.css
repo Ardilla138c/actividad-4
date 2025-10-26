@@ -4,27 +4,19 @@
 
 
 :root {
-font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: light dark; /* color-scheme: light dark; */
 
-  color: rgba(201, 181, 196, 0.87); /* Your main text color (pinkish) */
+  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* --- BLACK OUTLINE (CONTORNO NEGRO) --- */
-  /* This creates a 1px black outline around the text */
-  text-shadow: 
-    -1px -1px 0 #000,  /* top-left */
-     1px -1px 0 #000,  /* top-right */
-    -1px  1px 0 #000,  /* bottom-left */
-     1px  1px 0 #000;  /* bottom-right */
 }
 
 a {
@@ -38,7 +30,8 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 5;
+
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -46,24 +39,26 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.2em;
   line-height: 1.1;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+
+  padding: 0.2em 0.5em; 
+  background-color: transparent; /* Fondo completamente invisible */
+  border-radius: 10px;
+  border: 1px solid rgba(189, 184, 188, 0.87); /* Define un borde visible usando tu color base */
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s; /* Añadida transición para el fondo */
 }
 
 button:hover {
-  border-color: #646cff;
+  background-color: rgba(226, 99, 195, 0.1); /* Un 10% de tu color base */
+    border-color: rgba(226, 99, 195, 1); /* El borde se vuelve totalmente opaco */
 }
 
 button:focus,

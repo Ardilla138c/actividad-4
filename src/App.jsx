@@ -59,7 +59,7 @@ function App() {
       
       {/* Título con fondo semitransparente para mejor contraste */}
       <h1 className="text-4xl font-bold text-white my-6 bg-black bg-opacity-50 p-2 rounded">
-        🐿️ Lista de Tareas 🐿️ 
+        Lista de Tareas  
       </h1>
       
       {/* Componente para agregar nuevas tareas */}
